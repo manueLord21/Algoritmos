@@ -1,5 +1,7 @@
 package com.algoritmos;
 
+import java.util.Iterator;
+import java.util.PriorityQueue;
 import java.util.Scanner;
 
 public class Ciclos {
@@ -59,5 +61,17 @@ public class Ciclos {
 			cadena += "\n";
 		}
 		return cadena;
+	}
+	
+	public void cola(PriorityQueue cola) {
+		int[] col = new int [cola.size()];
+		
+		int num = 0;
+		Iterator it = cola.iterator();
+		System.out.println(cola.size());	
+		System.out.println();
+		while(it.hasNext()) {
+		    System.out.println(it.next());			
+		}
 	}
 }
